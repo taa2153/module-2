@@ -13,13 +13,31 @@
     font-size: 62.5%;
   }
 
+
+
   body {
+	background: linear-gradient(-45deg, #0f0f0f, #1c183d, #04096c, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
     font-family: 'Tajawal', sans-serif;
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--gin);
-    background-color: var(--outer-space);
-  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
   h1,
   h2,
@@ -96,6 +114,9 @@
     color: #bfc4c8;   
   }
 
+  figure{
+      padding-top: 100px;
+  }
   .aboutme {
     text-align: right;
     display: flex;
@@ -136,7 +157,7 @@
       font-size: 8rem;
       border: 2px solid var(--gin);
       border-radius: 8px;
-      background-color: var(--outer-space);
+      background-color: #0f0f0f;
       width: 500px;
       padding: 0.5rem 1rem;
       display: flex;
@@ -148,7 +169,7 @@
     padding-left: 200px;
     padding-right: 200px;
     margin-left: 100px;  
-    background-color: var(--outer-space);
+    background-color: #000000;
     color: var(--heliotrope);
     border: 2px solid var(--gin);
     border-radius: 8px;
